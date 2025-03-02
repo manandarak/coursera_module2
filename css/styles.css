@@ -1,0 +1,145 @@
+/* Basic Styling */
+* {
+    box-sizing: border-box; /* Makes padding/margins easier to manage */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Optional: Sets a clean font */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0; /* Space above and below heading */
+    font-size: 1.75em; /* 75% larger than normal text */
+}
+
+.container {
+    width: 100%;
+    padding: 10px; /* Space around the sections */
+}
+
+.section {
+    background-color: #e0e0e0; /* Light gray background */
+    border: 1px solid black; /* Black border */
+    margin: 10px; /* Space between sections */
+    position: relative; /* For positioning the title */
+    padding: 40px 10px 10px 10px; /* Space inside: top, right, bottom, left */
+}
+
+.section-title {
+    background-color: #ff9999; /* Pinkish title background */
+    border: 1px solid black; /* Black border */
+    position: absolute; /* Sticks to top-right */
+    top: 0;
+    right: 0;
+    padding: 5px 20px; /* Space inside title */
+    font-size: 1.25em; /* 25% larger than normal text */
+}
+
+p {
+    font-size: 1em; /* Normal text size */
+}
+
+/* Desktop View (992px and up) */
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: calc(33.33% - 20px); /* 33.33% width minus margins */
+    }
+}
+
+/* Tablet View (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        float: left;
+    }
+    .section:nth-child(1), .section:nth-child(2) {
+        width: calc(50% - 20px); /* First 2 sections are 50% wide */
+    }
+    .section:nth-child(3) {
+        width: calc(100% - 20px); /* 3rd section is full width */
+        clear: both; /* Starts on a new row */
+    }
+}
+
+/* Mobile View (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 20px); /* Full width */
+    }
+}
+
+/* Basic Styling */
+* {
+    box-sizing: border-box; /* Makes padding/margins easier to manage */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Optional: Sets a clean font */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0; /* Space above and below heading */
+    font-size: 1.75em; /* 75% larger than normal text */
+}
+
+.container {
+    width: 100%;
+    padding: 10px; /* Space around the sections */
+}
+
+.section {
+    background-color: #e0e0e0; /* Light gray background */
+    border: 1px solid black; /* Black border */
+    margin: 10px; /* Space between sections */
+    position: relative; /* For positioning the title */
+    padding: 40px 10px 10px 10px; /* Space inside: top, right, bottom, left */
+}
+
+.section-title {
+    background-color: #ff9999; /* Pinkish title background */
+    border: 1px solid black; /* Black border */
+    position: absolute; /* Sticks to top-right */
+    top: 0;
+    right: 0;
+    padding: 5px 20px; /* Space inside title */
+    font-size: 1.25em; /* 25% larger than normal text */
+}
+
+p {
+    font-size: 1em; /* Normal text size */
+}
+
+/* Desktop View (992px and up) */
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: calc(33.33% - 20px); /* 33.33% width minus margins */
+    }
+}
+
+/* Tablet View (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        float: left;
+    }
+    .section:nth-child(1), .section:nth-child(2) {
+        width: calc(50% - 20px); /* First 2 sections are 50% wide */
+    }
+    .section:nth-child(3) {
+        width: calc(100% - 20px); /* 3rd section is full width */
+        clear: both; /* Starts on a new row */
+    }
+}
+
+/* Mobile View (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 20px); /* Full width */
+    }
+}
